@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".login">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:layout_marginTop="82dp"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/golden"
+            android:text="Email:"
+            />
+        <EditText
+            android:textColor="@color/white"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Email"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColorHint="@color/goldenshade"
+            android:id="@+id/emailBox"
+            app:backgroundTint="@color/white"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="45dp"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/golden"
+            android:text="Password:"
+            />
+        <EditText
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Password"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="textPassword"
+            android:textColorHint="@color/goldenshade"
+            android:id="@+id/passwordBox"
+            app:backgroundTint="@color/white"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLoginSimple"
+        android:text="login"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/golden"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="register"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/golden"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/signUpbtn"
+        />
+
+    <com.facebook.login.widget.LoginButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="15dp"
+        android:id="@+id/login_button"/>
+
+
+
+
+
+</LinearLayout>

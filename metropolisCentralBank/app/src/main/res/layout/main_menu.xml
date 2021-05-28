@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/background"
+android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Balance"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/gold"
+            android:textSize="35dp"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:textColor="@color/white"
+            android:id="@+id/balance"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/ico"
+                android:background="@null"
+                android:id="@+id/DepositButton"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deposit"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/golden"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="25dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Withdraw"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/golden"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="25dp"/>
+
+            <ImageButton
+                android:layout_marginLeft="15dp"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/deposit_ico"
+                android:background="@null"
+                android:id="@+id/withdrawButton"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/transfer_ico"
+                android:background="@null"
+                android:id="@+id/transferButton"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transfer"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/golden"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="25dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/golden"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="25dp"/>
+
+            <ImageButton
+                android:layout_marginLeft="15dp"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/history_ico"
+                android:background="@null"
+                android:id="@+id/histroyButton"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:src="@drawable/exit_ico"
+            android:background="@null"
+            android:id="@+id/exitButton"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:gravity="center"
+            android:textColor="@color/golden"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Metropolis Central Bank"
+        android:textColor="@color/light_grey"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        />
+</LinearLayout>

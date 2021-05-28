@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Metropolis Central</string>
+    <string name="facebook_app_id">365906904831345</string>
+    <string name="fb_login_protocol_scheme">fb365906904831345</string>
+</resources>

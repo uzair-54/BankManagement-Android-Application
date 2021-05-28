@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"/>
+
+
+    <TextView
+        android:layout_marginTop="85dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter cnic"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/gold"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:hint="Cnic Without dashes"
+        android:textColorHint="@color/light_grey"
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:maxLength="13"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:id="@+id/cnicTextBox"
+        />
+
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter pin"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/gold"
+        android:textSize="35dp"
+        android:textAlignment="center"/>
+
+    <com.goodiebag.pinview.Pinview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:pinLength="4"
+        android:layout_gravity="center"
+        app:pinWidth="35dp"
+        android:minHeight="15dp"
+        app:cursorVisible="true"
+        app:forceKeyboard="true"
+        app:pinBackground="@color/grey"
+        app:inputType="number"
+        android:id="@+id/pinOnlogIn"
+        />
+
+    <Button
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterButton"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/gold"
+        android:backgroundTint="@color/black"
+        android:text="Enter Pin"
+        android:textSize="25dp"
+        />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createAccountButton"
+        android:layout_gravity="center"
+        android:text="Create Account"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gold"
+        android:fontFamily="sans-serif"
+        android:backgroundTint="@color/black"
+        android:textSize="25dp"
+        />
+
+
+</LinearLayout>

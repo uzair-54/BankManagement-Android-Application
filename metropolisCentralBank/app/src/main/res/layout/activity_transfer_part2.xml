@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".transferPart2">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transfer Amount"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="49dp"
+        android:textAlignment="center"
+        android:textColor="@color/gold"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:hint="Enter your amount here"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/transferAmount"
+        android:layout_marginRight="10dp"
+        android:textColorHint="@color/goldenshade"
+        android:backgroundTint="@android:color/white"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="complete Transfer"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="29dp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/btnTransferPart2"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/gold"
+        android:backgroundTint="@color/black"
+        />
+
+
+</LinearLayout>

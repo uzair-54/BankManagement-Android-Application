@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/gold"
+        android:textAlignment="center"
+        android:textSize="35dp"
+    />
+    <LinearLayout
+        android:layout_marginTop="82dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/golden"
+            android:textSize="20dp"
+            android:text="Name:"
+            />
+        <EditText
+            android:textColor="@color/white"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name"
+            android:textColorHint="@color/goldenshade"
+            android:backgroundTint="@color/white"
+            android:textAlignment="center"
+            android:id="@+id/nameTextbox"
+            />
+        <TextView
+            android:textColor="@color/golden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age:"
+            android:textSize="20dp"
+            android:layout_marginLeft="35dp"
+            />
+        <EditText
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:textColorHint="@color/goldenshade"
+            android:backgroundTint="@color/white"
+            android:textAlignment="center"
+
+            android:id="@+id/textboxAge"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CNIC"
+            android:textColor="@color/golden"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_marginLeft="15dp"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:hint="Add without dashes"
+            android:inputType="number"
+            android:textColorHint="@color/goldenshade"
+            android:backgroundTint="@color/white"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:maxLength="13"
+            android:id="@+id/cnic"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textSize="20dp"
+            android:textColor="@color/golden"
+            />
+        <EditText
+            android:layout_marginLeft="15dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="090078601"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="@color/goldenshade"
+            android:backgroundTint="@color/white"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:id="@+id/phoneNumber"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:textColor="@color/golden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Initial Deposit:"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_marginLeft="15dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="More than 1500"
+            android:textColor="@color/white"
+            android:inputType="number"
+            android:textColorHint="@color/goldenshade"
+            android:backgroundTint="@color/white"
+            android:textAlignment="center"
+            android:id="@+id/initialDeposit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/golden"
+            android:layout_height="wrap_content"
+            android:text="Create Pin:"
+            android:layout_marginTop="17dp"
+            android:textSize="20dp"
+            />
+        <com.goodiebag.pinview.Pinview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:pinLength="4"
+            app:pinWidth="35dp"
+            android:minHeight="15dp"
+            app:cursorVisible="true"
+            app:forceKeyboard="true"
+            app:pinBackground="@color/grey"
+            app:inputType="number"
+            android:id="@+id/pinBox"/>
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createAccountButton"
+        android:layout_gravity="center"
+        android:text="Create Account"
+        android:fontFamily="sans-serif"
+        android:textAllCaps="true"
+        android:background="@color/white"
+        android:textAlignment="center"
+        android:textColor="@color/gold"
+        android:backgroundTint="@color/black"
+        />
+
+
+
+</LinearLayout>
